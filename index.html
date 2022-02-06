@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SekineGame</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" >
+</head>
+<body class="h-screen">
+    <main class="m-5 h-full">
+        <div class="h-40 m-2 flex">
+            <div class="flex-1 m-1">
+                <Button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-4 px-4 border border-gray-400 rounded-full h-40 w-40 shadow text-xl" id="shuffle_btn">シャッフル</Button>
+            </div>   
+            <div class="flex-1 m-1">
+                <div class="h-20">
+                    <div class="inline-block relative w-40 text-center">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline w-20" id="n_value">
+                            <option selected>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                    <h1 id="point" class="text-lg text-center font-bold my-2">0/0(0%)</h1>
+                </div>
+                <div class="h-20 align-middle border border-gray-800 rounded-lg">
+                    <h1 class="text-4xl text-center font-bold py-2" id="number"></h1>
+                </div>
+            </div>         
+        </div>
+        <div>
+            <div class="flex">
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_1_1" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_1_2" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_1_3" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_1_4" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_1_5" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_2_1" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_2_2" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_2_3" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_2_4" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_2_5" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_3_1" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_3_2" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_3_3" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_3_4" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_3_5" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_4_1" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_4_2" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_4_3" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_4_4" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_4_5" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_5_1" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                    <h1 id="hint_1" class=" text-center"></h1>
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_5_2" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                    <h1 id="hint_2" class=" text-center"></h1>
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_5_3" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                    <h1 id="hint_3" class=" text-center"></h1>
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_5_4" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                    <h1 id="hint_4" class=" text-center"></h1>
+                </div>
+                <div class="flex-1 m-2">
+                    <img src="./Image/tramp.jpg" id="img_5_5" alt="" class="border-2 border-gray-800 hover:border-yellow-400">
+                    <h1 id="hint_5" class=" text-center"></h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
